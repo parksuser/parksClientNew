@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tlalim.masa.parksclient" >
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:name="com.tlalim.masa.parksclient.commondata.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.tlalim.masa.parksclient.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tlalim.masa.parksclient.activities.user.CreateAccount" >
+        </activity>
+        <activity android:name="com.tlalim.masa.parksclient.activities.user.LogIn" >
+        </activity>
+        <activity android:name="com.tlalim.masa.parksclient.activities.user.CreateWithEmail" >
+        </activity>
+        <activity android:name="com.tlalim.masa.parksclient.activities.user.ForgotPassword" >
+        </activity>
+        <activity android:name="com.tlalim.masa.parksclient.activities.MainMenu" >
+        </activity>
+        <activity android:name="com.tlalim.masa.parksclient.activities.news.ClientNewsMainActivity" >
+        </activity>
+        <activity android:name="com.tlalim.masa.parksclient.activities.news.ChosenNews" >
+        </activity>
+    </application>
+
+</manifest>
