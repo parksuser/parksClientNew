@@ -62,10 +62,9 @@ public class CreateWithEmail extends AppCompatActivity {
                     @Override
                     public void done(ParseException e) {
                         if (e == null) {
-                            Toast.makeText(getApplicationContext(), "Success!!!",
+                            Toast.makeText(getApplicationContext(), "Account was created",
                                     Toast.LENGTH_LONG).show();
-                            Intent intent = new Intent(getApplicationContext(), MainMenu.class);
-                            startActivity(intent);
+                            startActivity(new Intent(getApplicationContext(), MainMenu.class));
                         } else
                             Toast.makeText(getApplicationContext(), "Failed! " + e.getMessage(),
                                     Toast.LENGTH_LONG).show();
@@ -80,5 +79,9 @@ public class CreateWithEmail extends AppCompatActivity {
                     "Please fill in the required fields and try again", Toast.LENGTH_LONG).
                     show();
         }
+    }
+
+    public void buyGreenCard(View view) {
+        //эту функцию нужно реализовать
     }
 }

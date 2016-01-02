@@ -15,9 +15,15 @@ public class CreateAccount extends AppCompatActivity {
         setContentView(R.layout.activity_create_account);
     }
 
-    //first
-    public void createMail(View view) {
-        Intent intent = new Intent(getApplicationContext(), CreateWithEmail.class);
-        startActivity(intent);
+    public void createAccountWithMail(View view) {
+        startActivity(new Intent(getApplicationContext(), CreateWithEmail.class));
+    }
+
+    public void singInWithGoogle(View view) {
+
+//        Intent intent = AccountPicker.newChooseAccountIntent(
+//                null, null, new String[]{"com.google"},
+//                false, null, null, null, null);
+//        startActivityForResult(intent, 123);
     }
 }
