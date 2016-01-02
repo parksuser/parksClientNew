@@ -22,12 +22,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void createAccount(View view) {
-        Intent intent = new Intent(getApplicationContext(), CreateAccount.class);
-        startActivity(intent);
+        startActivity(new Intent(getApplicationContext(), CreateAccount.class));
     }
 
     public void logInAccount(View view) {
-        Intent intent = new Intent(getApplicationContext(),LogIn.class);
-        startActivity(intent);
+        startActivity(new Intent(getApplicationContext(),LogIn.class));
     }
 }

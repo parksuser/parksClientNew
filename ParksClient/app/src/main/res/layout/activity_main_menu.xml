@@ -1,53 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.tlalim.masa.parksclient.activities.MainMenu">
 
     <Button
+        android:id="@+id/button10"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="Parks"
-        android:id="@+id/button10"
-        android:layout_marginTop="117dp"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_marginLeft="45dp"
-        android:layout_marginStart="45dp" />
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="117dp"
+        android:text="Parks" />
 
     <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Camping"
         android:id="@+id/button11"
-        android:layout_alignTop="@+id/button10"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="42dp"
-        android:layout_marginEnd="42dp" />
-
-    <Button
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="News"
-        android:onClick="openNews"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button10"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:text="Camping" />
+
+    <Button
         android:id="@+id/button12"
-        android:layout_below="@+id/button10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignLeft="@+id/button10"
         android:layout_alignStart="@+id/button10"
-        android:layout_marginTop="52dp" />
+        android:layout_below="@+id/button10"
+        android:layout_marginTop="52dp"
+        android:onClick="openNews"
+        android:text="News" />
 
     <Button
+        android:id="@+id/button13"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="Calendar"
-        android:id="@+id/button13"
-        android:layout_alignTop="@+id/button12"
         android:layout_alignLeft="@+id/button11"
-        android:layout_alignStart="@+id/button11" />
+        android:layout_alignStart="@+id/button11"
+        android:layout_alignTop="@+id/button12"
+        android:text="Calendar" />
 
 </RelativeLayout>

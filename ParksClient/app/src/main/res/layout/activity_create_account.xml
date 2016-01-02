@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="15dp"
-        android:text="With help off:"
+        android:text="Create account with help of:"
         android:textSize="18dp" />
 
     <Button
@@ -29,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/facebook"
+        android:onClick="singInWithGoogle"
         android:layout_centerHorizontal="true"
         android:text="Google+" />
 
@@ -37,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:text="With help off E-mail:"
+        android:text="Create account with help of:"
         android:textSize="18dp" />
 
     <Button
@@ -45,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textEmail"
-        android:onClick="createMail"
+        android:onClick="createAccountWithMail"
         android:text="E-mail" />
 
     <TextView
